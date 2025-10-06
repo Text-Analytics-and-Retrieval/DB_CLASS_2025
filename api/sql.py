@@ -1,16 +1,24 @@
+import os
 from typing import Optional
 import psycopg2
 from psycopg2 import pool
+from dotenv import load_dotenv
 
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
+USER = os.getenv('DB_USER')
+PASSWORD = os.getenv('DB_PASSWORD')
+DBNAME = os.getenv('DB_NAME')
+HOST = os.getenv('DB_HOST')
+PORT = os.getenv('DB_PORT')
 
 class DB:
     connection_pool = pool.SimpleConnectionPool(
         1, 100,  # 最小和最大連線數
-        user='your_account',
-        password='password',
-        host='140.117.68.66',
-        port='5432',
-        dbname='DB_name'
+        user=USER,
+        password=PASSWORD,
+        host=HOST,
+        port=PORT,
+        dbname=DBNAME
     )
 
     @staticmethod

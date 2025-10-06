@@ -1,11 +1,20 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
+load_dotenv()  # Load environment variables from .env file
+
+USER = os.getenv('DB_USER')
+PASSWORD = os.getenv('DB_PASSWORD')
+DBNAME = os.getenv('DB_NAME')
+HOST = os.getenv('DB_HOST')
+PORT = os.getenv('DB_PORT')
 
 connection = psycopg2.connect(
-    user='your_account',
-    password='password',
-    host='140.117.68.66',
-    port='5432',
-    dbname='DB_name'  # PostgreSQL 的資料庫名稱
+    user=USER,
+    password=PASSWORD,
+    host=HOST,
+    port=PORT,
+    dbname=DBNAME
 )
 cursor = connection.cursor()
 
