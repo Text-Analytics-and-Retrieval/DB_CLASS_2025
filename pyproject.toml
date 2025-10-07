@@ -1,0 +1,17 @@
+# 這是一個給 Python 專案用的標準設定檔
+# Ruff 會自動讀取裡面的 [tool.ruff] 區塊
+
+[tool.ruff]
+# 您可以指定專案的 Python 版本，讓 Ruff 的檢查更精確
+target-version = "py38" 
+
+[tool.ruff.lint]
+# 這裡定義您要啟用哪些規則系列
+# "E" 和 "W" 是 pycodestyle 的錯誤和警告
+# "F" 是 Pyflakes 的檢查 (包含 E722 所屬的 F 系列錯誤)
+select = ["E", "W", "F", "I", "UP"]
+
+# --- 這是您要的關鍵設定 ---
+# 在 ignore 列表中加入 "E722"
+# 這會告訴 Ruff 在整個專案中，都不要檢查或回報 E722 這個錯誤。
+ignore = ["E722","E711","E501","W291"]
