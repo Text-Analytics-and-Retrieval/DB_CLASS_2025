@@ -24,7 +24,7 @@
 
 ```bash
 # 從 Github 拉取原始碼
-git clone https://github.com/Text-Analytics-and-Retrieval/db_class2025.git
+git clone https://github.com/Text-Analytics-and-Retrieval/DB_CLASS_2025.git
 cd DB_CLASS_2025/
 ```
 
