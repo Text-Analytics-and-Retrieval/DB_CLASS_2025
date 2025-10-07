@@ -4,7 +4,6 @@
 [![GitHub license](https://img.shields.io/github/license/Text-Analytics-and-Retrieval/db_class2023)](https://github.com/Text-Analytics-and-Retrieval/db_class2023/main/LICENSE)
 
 一套使用Flask開發的網路書店系統，後端使用Postgres資料庫
-`<br>`
 
 ## 功能
 
@@ -55,9 +54,9 @@ pip install -r requirements.txt
 
 ##### 修改連線資訊
 
-```python=
+```bash
 # 1. 找到 .env.example 檔案
-# 2. [注意] 複製 .env.example 建立一個新的 .env 檔案
+# 2. 注意：複製 .env.example 建立一個新的 .env 檔案
 # 3. 根據各組的連線資訊修改 .env 內容參數
 DB_USER=... 
 DB_PASSWORD=...
@@ -67,13 +66,13 @@ DB_NAME=...
 ```
 
 ### 4. 匯入SQL
-
+參考資料: [Link](https://learningsky.io/use-postgresql-databases-with-the-pgadmin/)
 - 打開 ebook.sql
 - 將 SQL 檔裡面的程式碼 貼到 自己組別的資料庫內執行(在自己組別的資料庫點右鍵選Query Tool)並執行
 
 ### 5. 啟動程式
 
-```python=
+```bash
 python app.py
 倘若遇到 OSError: [Errno 98] Address already in use  像這樣的錯誤代表有重複執行的問題
 請輸入 lsof -i :5000 查看是哪個PID使用中，並再輸入kill -9 <該執行中的PID> 刪除
