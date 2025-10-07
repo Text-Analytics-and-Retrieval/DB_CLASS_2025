@@ -30,9 +30,9 @@ cd DB_CLASS_2025/
 ```
 
 ### 2. 建立環境
-
+注意：請先安裝 [anaconda](https://www.anaconda.com/download) 再進行後續的步驟
 ```bash!
-# 1. `db-2025` 可改為自訂的環境名稱，
+# 1. `db-2025` 可改為自訂的環境名稱
 # 2. 同學也可以自訂 `python=...` 的版本，但要注意3.11版會有版本衝突的問題，不建議使用
 conda create -n db-2025 python=3.10
 
