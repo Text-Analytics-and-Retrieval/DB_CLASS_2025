@@ -53,6 +53,7 @@ pip install -r requirements.txt
 
 ##### 修改連線資訊
 首先，執行以下指令，把 .env.example 這個檔案複製一份，並取名叫 .env
+> 執行以下指令以後，根目錄下將會有 2 份內容相同的檔案(`.env.example`, `.env`)，我們要修改的是手動新增的 `.env` 檔
 ```bash
 cp .env.example .env
 ```
