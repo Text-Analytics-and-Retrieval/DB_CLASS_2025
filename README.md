@@ -52,20 +52,17 @@ pip install -r requirements.txt
 ```
 
 ##### 修改連線資訊
-
+首先，執行以下指令，把 .env.example 這個檔案複製一份，並取名叫 .env
 ```bash
-# 1. 找到 .env.example 檔案
-# 2. 注意：複製 .env.example 建立一個新的 .env 檔案
-# 3. 根據各組的連線資訊修改 .env 內容參數
-DB_USER=... 
-DB_PASSWORD=...
-DB_HOST=...
-DB_PORT=...
-DB_NAME=...
+cp .env.example .env
 ```
+> 參考資料: [Link](https://bookstack.tarflow.com/books/a684e/page/postgresql-pgadmin)
+
+接著，在 .env 檔案內填入 PostgreSQL 連線資訊。
+
 
 ### 4. 匯入SQL
-參考資料: [Link](https://learningsky.io/use-postgresql-databases-with-the-pgadmin/)
+> 參考資料: [Link](https://learningsky.io/use-postgresql-databases-with-the-pgadmin/)
 - 打開 ebook.sql
 - 將 SQL 檔裡面的程式碼 貼到 自己組別的資料庫內執行(在自己組別的資料庫點右鍵選Query Tool)並執行
 
