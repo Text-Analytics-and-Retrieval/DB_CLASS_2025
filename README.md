@@ -57,9 +57,18 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 ```
-> 參考資料: [Link](https://bookstack.tarflow.com/books/a684e/page/postgresql-pgadmin)
 
 接著，在 .env 檔案內填入 PostgreSQL 連線資訊。
+> 各組的連線資訊存放在網路大學的，
+> 分組學習 ➔專案分組 ➔進入小組 ➔討論 ➔組內討論 ➔資料庫連線資訊
+```bash
+# .env 檔案中對應的環境參數範例
+DB_USER=project_x
+DB_PASSWORD=c8763xxx
+DB_HOST=140.117.xxx
+DB_PORT=12xx
+DB_NAME=project_x
+```
 
 
 ### 4. 匯入SQL
